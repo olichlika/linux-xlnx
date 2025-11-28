@@ -23,3 +23,11 @@
 		reg = <0x0 0x0 0x0 0x7ff00000>, <0x00000008 0x00000000 0x0 0x80000000>;
 	};
 };
+
+&sdhci1 {
+	status = "okay";
+	bus-width = <4>;
+	no-1-8-v;
+	disable-wp;
+	broken-cd;
+};
